@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/LECTURER/LectureMenu.aspx" title="Lecture Menu"  description="Lecturer Menu" >
+    <siteMapNode url="~/LECTURER/LectureProfile.aspx" title="Lecture Profile"  description="Lecture Profile" />
+	  <siteMapNode url="~/LECTURER/ContactUs.aspx" title="Contact Us"  description="Contact Us" />
+	  <siteMapNode url="~/LECTURER/ViewTimetable.aspx" title="Timetable"  description="Timetable" />
+	  <siteMapNode url="~/LECTURER/EditLecProfile.aspx" title="Edit Lecture Profile"  description="Edit Lecture Profile" />
+	  <siteMapNode url="~/LECTURER/ViewForm.aspx" title="Leave Application List"  description="Leave Application List" />
+	  <siteMapNode url="~/LECTURER/ApplyLeave.aspx" title="Leave Application"  description="Leave Application" />
+	  <siteMapNode url="~/LECTURER/ViewAssessment.aspx" title="Assessment List"  description="Assessment List" />
+	  <siteMapNode url="~/LECTURER/CreateAssessment.aspx" title="Create Assessment"  description="Create Assessment" />
+	  <siteMapNode url="~/LECTURER/EditAssessment.aspx" title="EditAssessment"  description="Edit Assessment" />
+	  <siteMapNode url="~/LECTURER/SearchAssessment.aspx" title="Search Assessment"  description="Search Assessment" />
+	  <siteMapNode url="~/LECTURER/ResultManagement.aspx" title="Result Management"  description="Result Management" />
+	  <siteMapNode url="~/LECTURER/DisplayStudentAss.aspx" title="Student Assessment List"  description="Student Assessment List" />
+	  <siteMapNode url="~/LECTURER/MarkAssessment.aspx" title="Mark Assessment"  description="Mark Assessment" />
+  </siteMapNode>
+</siteMap>

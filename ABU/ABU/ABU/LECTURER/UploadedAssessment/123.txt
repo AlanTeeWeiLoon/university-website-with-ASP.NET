@@ -1,0 +1,3 @@
+1) Who designed Python?,Guido van Rossum,Bjarne Stroustrup,Dennis Ritchie
+2) Which of the following is FALSE?,Python is not readable,Python is free and open-source, Python has rich scientific libraries
+3) When Unix was started to develop?,1969 ,1967,1973

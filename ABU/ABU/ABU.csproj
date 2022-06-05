@@ -1,0 +1,1116 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7C1B79D-A752-4E69-99C5-87F577E91FDE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABU</RootNamespace>
+    <AssemblyName>ABU</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44362</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="accountingfinance.aspx" />
+    <Content Include="AddNewBook.aspx" />
+    <Content Include="AF.aspx" />
+    <Content Include="applicant\CovidBanner.jpg" />
+    <Content Include="applyRegister.aspx" />
+    <Content Include="App_Data\ABU.mdf" />
+    <Content Include="App_Data\ABU_log.ldf">
+      <DependentUpon>ABU.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\SchoolPhoto.mdf" />
+    <Content Include="App_Data\SchoolPhoto_log.ldf">
+      <DependentUpon>SchoolPhoto.mdf</DependentUpon>
+    </Content>
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\flexslider.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\img\building.jpg" />
+    <Content Include="assets\img\contact.jpg" />
+    <Content Include="assets\img\faculty\1.jpg" />
+    <Content Include="assets\img\faculty\2.jpg" />
+    <Content Include="assets\img\faculty\3.jpg" />
+    <Content Include="assets\img\header.jpg" />
+    <Content Include="assets\img\logo180-50.png" />
+    <Content Include="assets\img\Social\facebook.png" />
+    <Content Include="assets\img\Social\google-plus.png" />
+    <Content Include="assets\img\Social\twitter.png" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\jquery-1.10.2.js" />
+    <Content Include="assets\js\jquery.easing.min.js" />
+    <Content Include="assets\js\jquery.flexslider.js" />
+    <Content Include="assets\js\scrollReveal.js" />
+    <Content Include="BM.aspx" />
+    <Content Include="BorrowBook.aspx" />
+    <Content Include="businessmanagement.aspx" />
+    <Content Include="DA.aspx" />
+    <Content Include="EditBook.aspx" />
+    <Content Include="EditEvent.aspx" />
+    <Content Include="EditEventPage.aspx" />
+    <Content Include="EditGallery.aspx" />
+    <Content Include="LECTURER\Image\SearchAssessment.png" />
+    <Content Include="LECTURER\EditLecProfile.aspx" />
+    <Content Include="EditProfile.aspx" />
+    <Content Include="EditSlide.aspx" />
+    <Content Include="EditSlidePage.aspx" />
+    <Content Include="EditTimetable.aspx" />
+    <Content Include="ForgetPassword.aspx" />
+    <Content Include="HomeLibrarian.aspx" />
+    <Content Include="Img3\Logo.png" />
+    <Content Include="Img4\DigitalWorld.jpg" />
+    <Content Include="Img4\HarryPotter.jpg" />
+    <Content Include="Img4\ImgUnavailable.jpg" />
+    <Content Include="Img4\library_background.jpg" />
+    <Content Include="Img4\library_guestbackground.jpg" />
+    <Content Include="Img4\Logo.jpeg" />
+    <Content Include="Img4\main_banner.jpg" />
+    <Content Include="Img4\RichDadPoorDad.jpg" />
+    <Content Include="Img4\Titacnic.jpg" />
+    <Content Include="IT.aspx" />
+    <Content Include="LeaveApprove.aspx" />
+    <Content Include="LecturerLeave.aspx" />
+    <Content Include="LECTURER\ApplyLeave.aspx" />
+    <Content Include="LECTURER\assets\css\font-awesome.min.css" />
+    <Content Include="LECTURER\assets\css\main.css" />
+    <Content Include="LECTURER\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="LECTURER\assets\js\jquery.min.js" />
+    <Content Include="LECTURER\assets\js\jquery.scrolly.min.js" />
+    <Content Include="LECTURER\assets\js\main.js" />
+    <Content Include="LECTURER\assets\js\skel.min.js" />
+    <Content Include="LECTURER\assets\js\util.js" />
+    <Content Include="LECTURER\ContactUs.aspx" />
+    <Content Include="LECTURER\CreateAssessment.aspx" />
+    <Content Include="LECTURER\DisplayStudentAss.aspx" />
+    <Content Include="LECTURER\EditAssessment.aspx" />
+    <Content Include="LECTURER\Image\abulogo.png" />
+    <Content Include="LECTURER\Image\ApplyLeave.png" />
+    <Content Include="LECTURER\Image\backtoschool.jpg" />
+    <Content Include="LECTURER\Image\BG.jpg" />
+    <Content Include="LECTURER\Image\LecturePic.png" />
+    <Content Include="LECTURER\Image\markAssessment.jpg" />
+    <Content Include="LECTURER\Image\uploadAssessment.jpg" />
+    <Content Include="LECTURER\Image\userProfile.png" />
+    <Content Include="LECTURER\Image\viewResult.jpg" />
+    <Content Include="LECTURER\Image\viewTimeTable.jpg" />
+    <Content Include="LECTURER\LectureMenu.aspx" />
+    <Content Include="LECTURER\LectureProfile.aspx" />
+    <Content Include="LECTURER\MarkAssessment.aspx" />
+    <Content Include="LECTURER\ResultManagement.aspx" />
+    <Content Include="LECTURER\SearchAssessment.aspx" />
+    <Content Include="LECTURER\ViewAssessment.aspx" />
+    <Content Include="LECTURER\ViewForm.aspx" />
+    <Content Include="LECTURER\ViewTimetable.aspx" />
+    <Content Include="Library.aspx" />
+    <Content Include="Library\css\bootstrap-theme.css" />
+    <Content Include="Library\css\bootstrap-theme.min.css" />
+    <Content Include="Library\css\bootstrap.css" />
+    <Content Include="Library\css\bootstrap.min.css" />
+    <Content Include="Library\css\datepicker.css" />
+    <Content Include="Library\css\fontAwesome.css" />
+    <Content Include="Library\css\fonts\flexslider-icon.svg" />
+    <Content Include="Library\css\hero-slider.css" />
+    <Content Include="Library\css\owl-carousel.css" />
+    <Content Include="Library\css\templatemo-style.css" />
+    <Content Include="Library\fonts\fontawesome-webfont.svg" />
+    <Content Include="Library\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Library\js\datepicker.js" />
+    <Content Include="Library\js\main.js" />
+    <Content Include="Library\js\plugins.js" />
+    <Content Include="Library\js\vendor\bootstrap.js" />
+    <Content Include="Library\js\vendor\bootstrap.min.js" />
+    <Content Include="Library\js\vendor\jquery-1.11.2.min.js" />
+    <Content Include="Library\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="Library\js\vendor\npm.js" />
+    <Content Include="ManageFine.aspx" />
+    <Content Include="RemoveAnswer.aspx" />
+    <Content Include="RemoveRecommendedBook.aspx" />
+    <Content Include="ReplyEmail.aspx" />
+    <Content Include="ReturnBook.aspx" />
+    <Content Include="SearchBook.aspx" />
+    <Content Include="SFeedback.aspx" />
+    <Content Include="SProfile.aspx" />
+    <Content Include="StudentHome.aspx" />
+    <Content Include="StudentLibrary.aspx" />
+    <Content Include="UpdateRecommendedBook.aspx" />
+    <Content Include="UploadAnswer.aspx" />
+    <Content Include="ViewAssignment.aspx" />
+    <Content Include="ViewBookStatus.aspx" />
+    <Content Include="ViewFeedback.aspx" />
+    <Content Include="createTimetable.aspx" />
+    <Content Include="CreateUser.aspx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\icomoon.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.min.css" />
+    <Content Include="css\pricing.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\util.css" />
+    <Content Include="EditLecturer.aspx" />
+    <Content Include="EditStudent.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="designanimation.aspx" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="fonts\icomoon\icomoon.svg" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="fonts\montserrat\OFL.txt" />
+    <Content Include="home.aspx" />
+    <Content Include="img1\ABU.jpg" />
+    <Content Include="img1\ABU2.jpg" />
+    <Content Include="img1\ABU3.jpg" />
+    <Content Include="img1\ABU5.jpg" />
+    <Content Include="img1\ABUni.png" />
+    <Content Include="img1\accountingfinance.png" />
+    <Content Include="img1\back.jpg" />
+    <Content Include="img1\backimg.jpg" />
+    <Content Include="img1\bestschool.png" />
+    <Content Include="img1\bg1.jpg" />
+    <Content Include="img1\building.jpg" />
+    <Content Include="img1\BusinessManagement.jpg" />
+    <Content Include="img1\calendar.png" />
+    <Content Include="img1\choir.jpg" />
+    <Content Include="img1\club1.jpg" />
+    <Content Include="img1\club2.jpg" />
+    <Content Include="img1\club3.jpg" />
+    <Content Include="img1\club4.jpg" />
+    <Content Include="img1\club5.png" />
+    <Content Include="img1\club6.jpg" />
+    <Content Include="img1\contactus.jpg" />
+    <Content Include="img1\courseaccounting.jpg" />
+    <Content Include="img1\courseanimation.jpg" />
+    <Content Include="img1\coursebusiness.jpg" />
+    <Content Include="img1\courseComputer.jpg" />
+    <Content Include="img1\coursedesign.jpg" />
+    <Content Include="img1\coursefinance.jpg" />
+    <Content Include="img1\courseIT.jpg" />
+    <Content Include="img1\coursemanagement.jpg" />
+    <Content Include="img1\covid.png" />
+    <Content Include="img1\design&amp;animation.jpg" />
+    <Content Include="img1\e-open.jpg" />
+    <Content Include="img1\event.jpg" />
+    <Content Include="img1\gamecom.jpg" />
+    <Content Include="img1\graduation.png" />
+    <Content Include="img1\international.jpg" />
+    <Content Include="img1\international2.jpg" />
+    <Content Include="img1\it&amp;computer.jpg" />
+    <Content Include="img1\IT.png" />
+    <Content Include="img1\lec1.jpg" />
+    <Content Include="img1\lec2.png" />
+    <Content Include="img1\lec3.jpg" />
+    <Content Include="img1\lec4.jpg" />
+    <Content Include="img1\lec5.jpg" />
+    <Content Include="img1\lec6.jpg" />
+    <Content Include="img1\lec7.jpg" />
+    <Content Include="img1\lec8.jpg" />
+    <Content Include="img1\lecturer.jpeg" />
+    <Content Include="img1\Malaysian.jpg" />
+    <Content Include="img1\manage.png" />
+    <Content Include="img1\nav.jpg" />
+    <Content Include="img1\paintball.jpg" />
+    <Content Include="img1\participant.png" />
+    <Content Include="img1\ptptn.jpg" />
+    <Content Include="img1\web-design.png" />
+    <Content Include="InternationalScholarship.aspx" />
+    <Content Include="InternationalStudent.aspx" />
+    <Content Include="itcomputer.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\google_map.js" />
+    <Content Include="js\jquery.countTo.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.magnific-popup.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.stellar.min.js" />
+    <Content Include="js\jquery.waypoints.min.js" />
+    <Content Include="js\magnific-popup-options.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\mainlogin.js" />
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\simplyCountdown.js" />
+    <Content Include="lecturer.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MalaysianScholarship.aspx" />
+    <Content Include="MalaysianStudent.aspx" />
+    <Content Include="SearchUser.aspx" />
+    <Content Include="ShowTimetable.aspx" />
+    <Content Include="ViewLecturer.aspx" />
+    <Content Include="ViewLoanStatus.aspx" />
+    <Content Include="ViewRecommendedBook.aspx" />
+    <Content Include="ViewRegister.aspx" />
+    <Content Include="SchoolGallery.aspx" />
+    <Content Include="StudentLife.aspx" />
+    <Content Include="themes\1\bullet.png" />
+    <Content Include="themes\1\js-image-slider.css" />
+    <Content Include="themes\1\js-image-slider.js" />
+    <Content Include="themes\generic.css" />
+    <Content Include="vendor\animate\animate.css" />
+    <Content Include="vendor\animsition\css\animsition.css" />
+    <Content Include="vendor\animsition\css\animsition.min.css" />
+    <Content Include="vendor\animsition\js\animsition.js" />
+    <Content Include="vendor\animsition\js\animsition.min.js" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap\js\popper.js" />
+    <Content Include="vendor\bootstrap\js\popper.min.js" />
+    <Content Include="vendor\bootstrap\js\tooltip.js" />
+    <Content Include="vendor\countdowntime\countdowntime.js" />
+    <Content Include="vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="vendor\daterangepicker\moment.js" />
+    <Content Include="vendor\daterangepicker\moment.min.js" />
+    <Content Include="vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="vendor\select2\select2.css" />
+    <Content Include="vendor\select2\select2.js" />
+    <Content Include="vendor\select2\select2.min.css" />
+    <Content Include="vendor\select2\select2.min.js" />
+    <Content Include="ViewResult.aspx" />
+    <Content Include="ViewScholarship.aspx" />
+    <Content Include="ViewStudent.aspx" />
+    <Content Include="ViewTimetable.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accountingfinance.aspx.cs">
+      <DependentUpon>accountingfinance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accountingfinance.aspx.designer.cs">
+      <DependentUpon>accountingfinance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewBook.aspx.cs">
+      <DependentUpon>AddNewBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewBook.aspx.designer.cs">
+      <DependentUpon>AddNewBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AF.aspx.cs">
+      <DependentUpon>AF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AF.aspx.designer.cs">
+      <DependentUpon>AF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="applyRegister.aspx.cs">
+      <DependentUpon>applyRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="applyRegister.aspx.designer.cs">
+      <DependentUpon>applyRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BM.aspx.cs">
+      <DependentUpon>BM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BM.aspx.designer.cs">
+      <DependentUpon>BM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowBook.aspx.cs">
+      <DependentUpon>BorrowBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrowBook.aspx.designer.cs">
+      <DependentUpon>BorrowBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="businessmanagement.aspx.cs">
+      <DependentUpon>businessmanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="businessmanagement.aspx.designer.cs">
+      <DependentUpon>businessmanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DA.aspx.cs">
+      <DependentUpon>DA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DA.aspx.designer.cs">
+      <DependentUpon>DA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditBook.aspx.cs">
+      <DependentUpon>EditBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditBook.aspx.designer.cs">
+      <DependentUpon>EditBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditEvent.aspx.cs">
+      <DependentUpon>EditEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEvent.aspx.designer.cs">
+      <DependentUpon>EditEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditEventPage.aspx.cs">
+      <DependentUpon>EditEventPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEventPage.aspx.designer.cs">
+      <DependentUpon>EditEventPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditGallery.aspx.cs">
+      <DependentUpon>EditGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGallery.aspx.designer.cs">
+      <DependentUpon>EditGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\EditLecProfile.aspx.cs">
+      <DependentUpon>EditLecProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\EditLecProfile.aspx.designer.cs">
+      <DependentUpon>EditLecProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditSlide.aspx.cs">
+      <DependentUpon>EditSlide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditSlide.aspx.designer.cs">
+      <DependentUpon>EditSlide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditSlidePage.aspx.cs">
+      <DependentUpon>EditSlidePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditSlidePage.aspx.designer.cs">
+      <DependentUpon>EditSlidePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditTimetable.aspx.cs">
+      <DependentUpon>EditTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditTimetable.aspx.designer.cs">
+      <DependentUpon>EditTimetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeLibrarian.aspx.cs">
+      <DependentUpon>HomeLibrarian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeLibrarian.aspx.designer.cs">
+      <DependentUpon>HomeLibrarian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IT.aspx.cs">
+      <DependentUpon>IT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IT.aspx.designer.cs">
+      <DependentUpon>IT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutLibrarian.Master.cs">
+      <DependentUpon>LayoutLibrarian.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LayoutLibrarian.Master.designer.cs">
+      <DependentUpon>LayoutLibrarian.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveApprove.aspx.cs">
+      <DependentUpon>LeaveApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveApprove.aspx.designer.cs">
+      <DependentUpon>LeaveApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LectureDesign.Master.cs">
+      <DependentUpon>LectureDesign.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LectureDesign.Master.designer.cs">
+      <DependentUpon>LectureDesign.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerLeave.aspx.cs">
+      <DependentUpon>LecturerLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturerLeave.aspx.designer.cs">
+      <DependentUpon>LecturerLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\ApplyLeave.aspx.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\ApplyLeave.aspx.designer.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\CreateAssessment.aspx.cs">
+      <DependentUpon>CreateAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\CreateAssessment.aspx.designer.cs">
+      <DependentUpon>CreateAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\DisplayStudentAss.aspx.cs">
+      <DependentUpon>DisplayStudentAss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\DisplayStudentAss.aspx.designer.cs">
+      <DependentUpon>DisplayStudentAss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\EditAssessment.aspx.cs">
+      <DependentUpon>EditAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\EditAssessment.aspx.designer.cs">
+      <DependentUpon>EditAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\LectureMenu.aspx.cs">
+      <DependentUpon>LectureMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\LectureMenu.aspx.designer.cs">
+      <DependentUpon>LectureMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\LectureProfile.aspx.cs">
+      <DependentUpon>LectureProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\LectureProfile.aspx.designer.cs">
+      <DependentUpon>LectureProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\MarkAssessment.aspx.cs">
+      <DependentUpon>MarkAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\MarkAssessment.aspx.designer.cs">
+      <DependentUpon>MarkAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\ResultManagement.aspx.cs">
+      <DependentUpon>ResultManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\ResultManagement.aspx.designer.cs">
+      <DependentUpon>ResultManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\SearchAssessment.aspx.cs">
+      <DependentUpon>SearchAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\SearchAssessment.aspx.designer.cs">
+      <DependentUpon>SearchAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\ViewAssessment.aspx.cs">
+      <DependentUpon>ViewAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\ViewAssessment.aspx.designer.cs">
+      <DependentUpon>ViewAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\ViewForm.aspx.cs">
+      <DependentUpon>ViewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\ViewForm.aspx.designer.cs">
+      <DependentUpon>ViewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURER\ViewTimetable.aspx.cs">
+      <DependentUpon>ViewTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LECTURER\ViewTimetable.aspx.designer.cs">
+      <DependentUpon>ViewTimetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Library.aspx.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library.aspx.designer.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFine.aspx.cs">
+      <DependentUpon>ManageFine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageFine.aspx.designer.cs">
+      <DependentUpon>ManageFine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveAnswer.aspx.cs">
+      <DependentUpon>RemoveAnswer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoveAnswer.aspx.designer.cs">
+      <DependentUpon>RemoveAnswer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveRecommendedBook.aspx.cs">
+      <DependentUpon>RemoveRecommendedBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoveRecommendedBook.aspx.designer.cs">
+      <DependentUpon>RemoveRecommendedBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReplyEmail.aspx.cs">
+      <DependentUpon>ReplyEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReplyEmail.aspx.designer.cs">
+      <DependentUpon>ReplyEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBook.aspx.cs">
+      <DependentUpon>ReturnBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnBook.aspx.designer.cs">
+      <DependentUpon>ReturnBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBook.aspx.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchBook.aspx.designer.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SFeedback.aspx.cs">
+      <DependentUpon>SFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SFeedback.aspx.designer.cs">
+      <DependentUpon>SFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SProfile.aspx.cs">
+      <DependentUpon>SProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SProfile.aspx.designer.cs">
+      <DependentUpon>SProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLibrary.aspx.cs">
+      <DependentUpon>StudentLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLibrary.aspx.designer.cs">
+      <DependentUpon>StudentLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecommendedBook.aspx.cs">
+      <DependentUpon>UpdateRecommendedBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateRecommendedBook.aspx.designer.cs">
+      <DependentUpon>UpdateRecommendedBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadAnswer.aspx.cs">
+      <DependentUpon>UploadAnswer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadAnswer.aspx.designer.cs">
+      <DependentUpon>UploadAnswer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAssignment.aspx.cs">
+      <DependentUpon>ViewAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAssignment.aspx.designer.cs">
+      <DependentUpon>ViewAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookStatus.aspx.cs">
+      <DependentUpon>ViewBookStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBookStatus.aspx.designer.cs">
+      <DependentUpon>ViewBookStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFeedback.aspx.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFeedback.aspx.designer.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createTimetable.aspx.cs">
+      <DependentUpon>createTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createTimetable.aspx.designer.cs">
+      <DependentUpon>createTimetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditLecturer.aspx.cs">
+      <DependentUpon>EditLecturer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditLecturer.aspx.designer.cs">
+      <DependentUpon>EditLecturer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudent.aspx.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditStudent.aspx.designer.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="designanimation.aspx.cs">
+      <DependentUpon>designanimation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="designanimation.aspx.designer.cs">
+      <DependentUpon>designanimation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.Master.cs">
+      <DependentUpon>Index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.Master.designer.cs">
+      <DependentUpon>Index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalScholarship.aspx.cs">
+      <DependentUpon>InternationalScholarship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalScholarship.aspx.designer.cs">
+      <DependentUpon>InternationalScholarship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternationalStudent.aspx.cs">
+      <DependentUpon>InternationalStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternationalStudent.aspx.designer.cs">
+      <DependentUpon>InternationalStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="itcomputer.aspx.cs">
+      <DependentUpon>itcomputer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="itcomputer.aspx.designer.cs">
+      <DependentUpon>itcomputer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lecturer.aspx.cs">
+      <DependentUpon>lecturer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lecturer.aspx.designer.cs">
+      <DependentUpon>lecturer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MalaysianScholarship.aspx.cs">
+      <DependentUpon>MalaysianScholarship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MalaysianScholarship.aspx.designer.cs">
+      <DependentUpon>MalaysianScholarship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MalaysianStudent.aspx.cs">
+      <DependentUpon>MalaysianStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MalaysianStudent.aspx.designer.cs">
+      <DependentUpon>MalaysianStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchUser.aspx.cs">
+      <DependentUpon>SearchUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchUser.aspx.designer.cs">
+      <DependentUpon>SearchUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTimetable.aspx.cs">
+      <DependentUpon>ShowTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowTimetable.aspx.designer.cs">
+      <DependentUpon>ShowTimetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLecturer.aspx.cs">
+      <DependentUpon>ViewLecturer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLecturer.aspx.designer.cs">
+      <DependentUpon>ViewLecturer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLoanStatus.aspx.cs">
+      <DependentUpon>ViewLoanStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLoanStatus.aspx.designer.cs">
+      <DependentUpon>ViewLoanStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRecommendedBook.aspx.cs">
+      <DependentUpon>ViewRecommendedBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewRecommendedBook.aspx.designer.cs">
+      <DependentUpon>ViewRecommendedBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRegister.aspx.cs">
+      <DependentUpon>ViewRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewRegister.aspx.designer.cs">
+      <DependentUpon>ViewRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolGallery.aspx.cs">
+      <DependentUpon>SchoolGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchoolGallery.aspx.designer.cs">
+      <DependentUpon>SchoolGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLife.aspx.cs">
+      <DependentUpon>StudentLife.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLife.aspx.designer.cs">
+      <DependentUpon>StudentLife.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewResult.aspx.cs">
+      <DependentUpon>ViewResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewResult.aspx.designer.cs">
+      <DependentUpon>ViewResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewScholarship.aspx.cs">
+      <DependentUpon>ViewScholarship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewScholarship.aspx.designer.cs">
+      <DependentUpon>ViewScholarship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudent.aspx.cs">
+      <DependentUpon>ViewStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStudent.aspx.designer.cs">
+      <DependentUpon>ViewStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTimetable.aspx.cs">
+      <DependentUpon>ViewTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTimetable.aspx.designer.cs">
+      <DependentUpon>ViewTimetable.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Index.Master" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\style.css.map" />
+    <Content Include="fonts\.DS_Store" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="fonts\icomoon\.DS_Store" />
+    <Content Include="fonts\icomoon\icomoon.eot" />
+    <Content Include="fonts\icomoon\icomoon.ttf" />
+    <Content Include="fonts\icomoon\icomoon.woff" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="Library\css\bootstrap-theme.css.map" />
+    <Content Include="Library\css\bootstrap.css.map" />
+    <Content Include="Library\css\fonts\flexslider-icon.eot" />
+    <Content Include="Library\css\fonts\flexslider-icon.ttf" />
+    <Content Include="Library\css\fonts\flexslider-icon.woff" />
+    <Content Include="Library\fonts\fontawesome-webfont.eot" />
+    <Content Include="Library\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Library\fonts\fontawesome-webfont.woff" />
+    <Content Include="Library\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Library\fonts\FontAwesome.otf" />
+    <Content Include="Library\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Library\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Library\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="LayoutLibrarian.Master" />
+    <Content Include="Layout.Master" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="LECTURER\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="LECTURER\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="LECTURER\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="LECTURER\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="LECTURER\assets\fonts\FontAwesome.otf" />
+    <Content Include="LectureDesign.Master" />
+    <Content Include="LECTURER\UploadedAssessment\Note.docx" />
+    <Content Include="LECTURER\Answer\24th.docx" />
+    <Content Include="LECTURER\Answer\4th sst 2020.pdf" />
+    <Content Include="LECTURER\Answer\A-25-10.pdf" />
+    <Content Include="LECTURER\Answer\Cashflow2021.xlsx" />
+    <Content Include="LECTURER\Answer\cisco note.docx" />
+    <Content Include="LECTURER\Answer\Note.doc" />
+    <Content Include="LECTURER\Answer\Note.pdf" />
+    <Content Include="LECTURER\Answer\login.pdf" />
+    <Content Include="LECTURER\UploadedAssessment\login.pdf" />
+    <Content Include="Web.sitemap" />
+    <None Include="packages.config" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="resume\ResumeShannon.pdf" />
+    <Content Include="resume\ResumeXinjie.pdf" />
+    <Content Include="resume\ResumeZhaorui.pdf" />
+    <Content Include="resume\ResumeAlan.pdf" />
+    <Content Include="UploadedAssessment\Note.docx" />
+    <Content Include="UploadedAssessment\Sample1.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50425</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44362/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

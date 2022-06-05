@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LectureDesign.master.cs" Inherits="ABU.LectureDesign" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+		<title>ALL BEST UNIVERSITY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+        <form id="form1" runat="server">
+		<!-- Header -->
+			<header id="header">
+				<asp:HyperLink ID="logo" class="logo" runat="server" NavigateUrl="~/LectureMenu.aspx"><asp:Image ID="Image1" runat="server" ImageUrl="~/LECTURER/Image/abulogo.png" Height="68px" /></asp:HyperLink>
+				<a href="LectureMenu.aspx" class="logo" style="margin-left:8%"><strong>ABU</strong> Lecturer Page</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">					
+					<li><a href="LectureMenu.aspx">Home</a></li>
+					<li><a href="LectureProfile.aspx">User Profile</a></li>
+					<li><a href="ViewAssessment.aspx">Assessment Management</a></li>
+					<li><a href="ResultManagement.aspx">Result Management</a></li>
+					<li><a href="ViewTimetable.aspx">Timetable</a></li>
+                    <li><a href="ViewForm.aspx">Leave Application</a></li>
+                    <li><a href="../Login.aspx" >Logout</a></li>
+					
+				</ul>
+
+			</nav>
+			
+				<asp:Panel ID="Panel2" runat="server" Height="100px">		           
+				Facing Any Problem?
+				<br />
+				Feel Free to <asp:HyperLink ID="hyperlink1" runat="server" NavigateUrl="~/LECTURER/ContactUs.aspx">Contact Us!</asp:HyperLink>
+					<br />
+			        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+                        <CurrentNodeStyle ForeColor="#333333" />
+                        <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                        <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                        <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                    </asp:SiteMapPath>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+			</asp:Panel>
+
+
+
+		<!-- Main -->
+		<div class="container">
+			<div>
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+				</asp:ContentPlaceHolder>
+			</div>
+		</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<div class="copyright">
+                    ALL BEST UNIVERSITY © 2020 All Rights Reserved <a href="#">Disclaimer</a> and <a href="#">Privacy Policy</a>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            </form>
+	</body>
+</html>
