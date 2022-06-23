@@ -68,28 +68,24 @@ There are 5 users in this system, which are:
 
 - Login Page
 
-<img src="https://github.com/AlanTeeWeiLoon/E-Commerce-Applications-with-XML-ASP.NET/blob/main/Images/Login.jpg" />
+<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/Login.png" />
 
-- Admin Home Page
+- Home Page
 
-<img src="https://github.com/AlanTeeWeiLoon/E-Commerce-Applications-with-XML-ASP.NET/blob/main/Images/Admin%20Home%20Page.jpg" />
+<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/Homepage.jpeg" />
 
-- Sample Add and Edit (Product) Page
+- Course Details Page
 
-<img src="https://github.com/AlanTeeWeiLoon/E-Commerce-Applications-with-XML-ASP.NET/blob/main/Images/Add%20New%20Product%20Page.jpg" />
+<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/CourseDetails.png" />
 
-- Homepage
+- Feedback Page
 
-<img src="https://github.com/AlanTeeWeiLoon/E-Commerce-Applications-with-XML-ASP.NET/blob/main/Images/Homepage.jpg"  />
+<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/Feedback.png"  />
 
-- Product Page
+- Student Home Page
 
-<img src="https://github.com/AlanTeeWeiLoon/E-Commerce-Applications-with-XML-ASP.NET/blob/main/Images/Product%20page.jpg" />
+<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/StudentHomepage.png" />
 
-- Product Details Page
+- Librarian Home Page
 
-<img src="https://github.com/AlanTeeWeiLoon/E-Commerce-Applications-with-XML-ASP.NET/blob/main/Images/Single%20Product%20Page.jpg" />
-
-- Shopping Cart
-
-<img src="https://github.com/AlanTeeWeiLoon/E-Commerce-Applications-with-XML-ASP.NET/blob/main/Images/Shopping%20Cart.jpg" />
+<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/LibrarianHomepage.png" />
