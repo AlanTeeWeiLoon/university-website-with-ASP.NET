@@ -68,7 +68,7 @@ There are 5 users in this system, which are:
 
 - Login Page
 
-<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/Login.jpg" />
+<img src="https://github.com/AlanTeeWeiLoon/university-website-with-ASP.NET/blob/main/Images/Login.png" />
 
 - Home Page
 
